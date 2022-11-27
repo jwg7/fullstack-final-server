@@ -9,9 +9,9 @@ User Stories:
 
 The Front-End will have a:
 
-1) Home Page
-2) Tweet Form
-3) Registration/Login form
+- Home Page
+- Tweet Form
+- Registration/Login form
 
 The Back-End will:
 
