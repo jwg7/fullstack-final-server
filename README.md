@@ -15,7 +15,7 @@ The Front-End will have a:
 
 The Back-End will:
 
-- GET all posts in the Mongo datebase and respond with the list.
+- GET all posts in the Mongo database and respond with the list.
 - POST a new post based upon the data sent from the creation form.
 - POST register
 - POST login
