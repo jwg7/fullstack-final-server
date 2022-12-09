@@ -1,4 +1,4 @@
-# Twitter Clone project
+# Microblogging project
 
 This is a microblogging web application built using the MERN (MongoDB, Express, React, Node) technology stack.
 
@@ -10,7 +10,7 @@ User Stories:
 The Front-End will have a:
 
 - Home Page
-- Tweet Form
+- Post Form
 - Registration/Login form
 
 The Back-End will:
@@ -19,3 +19,7 @@ The Back-End will:
 - POST a new post based upon the data sent from the creation form.
 - POST register
 - POST login
+
+# FULL CREDIT: 
+
+This project was completed while following along with Ed Roh's excellent tuturial found [HERE](https://www.youtube.com/watch?v=K8YELRmUb5o&ab_channel=EdRoh). 

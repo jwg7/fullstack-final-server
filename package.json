@@ -1,0 +1,25 @@
+{
+  "name": "fullstack-final-server",
+  "version": "1.0.0",
+  "description": "This is a microblogging web application built using the MERN (MongoDB, Express, React, Node) technology stack.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwg7/fullstack-final-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jwg7/fullstack-final-server/issues"
+  },
+  "homepage": "https://github.com/jwg7/fullstack-final-server#readme",
+  "dependencies": {
+    "express-generator": "^4.16.1"
+  }
+}
