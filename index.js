@@ -10,8 +10,13 @@ import path from "path";
 import { fileURLToPath } from "url";
 import authRoutes from "./routes/auth.js"
 import userRoutes from "./routes/users.js"
+import postRoutes from "./routes/posts.js"
 import { register } from "./controllers/auth.js";
+import { createPost } from "./controllers/posts.js"
 import { verifyToken } from "./middleware/auth.js";
+import User from "./models/User.js"
+import Post  from "./models/Post.js"
+import { users, posts } from "./data/index.js"
 
 //////////////////////////////////////////////
 /////////////////////////////////////////////
@@ -54,11 +59,13 @@ const upload = multer({ storage });
 // routes with files
 
 app.post("/auth/register", upload.single("picture"), register);
+app.post("/posts", verifyToken, upload.single("picture"), createPost)
 
 // routes
 
 app.use("/auth", authRoutes)
 app.use("/users", userRoutes)
+app.use("/posts", postRoutes)
 
 /////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////
@@ -74,5 +81,10 @@ mongoose
   })
   .then(() => {
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
-  })
-  .catch((error) => console.log(`${error} did not connect`));
+// add this data one time
+// having issues with this showing up in my mongo database. It is showing in my terminal though. Commented out the below code so it doesnt transfer the data more than once and make duplicates. 
+// Actually - the info is showing up, it was under "test" collection
+// User.insertMany(users)
+// Post.insertMany(posts)
+})
+  .catch((error) => console.log(`${error} did not connect`))
