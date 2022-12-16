@@ -23,3 +23,5 @@ The Back-End will:
 # FULL CREDIT: 
 
 This project was completed while following along with Ed Roh's excellent tuturial found [HERE](https://www.youtube.com/watch?v=K8YELRmUb5o&ab_channel=EdRoh). 
+
+The tutorial used went above and beyond the basic requirements. This was both a pro and a con. It added multiple levels of complexity that were uneccesary to the task at hand. It did, however, give an overall feel for how fully functional fullstack applications are constructed today by professional software engineers. 
